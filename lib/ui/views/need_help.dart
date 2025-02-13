@@ -24,7 +24,7 @@ class ContactPage extends StatelessWidget {
             GestureDetector(
               onTap: () => _launchEmail(),
               child: Text(
-                'Email: imtiazahmed98754@gmail.com',
+                'Email: azaharuddin454@gmail.com',
                 style: TextStyle(fontSize: 18, color: Colors.blue),
               ),
             ),
@@ -32,7 +32,7 @@ class ContactPage extends StatelessWidget {
             GestureDetector(
               onTap: () => _launchPhone(),
               child: Text(
-                'Phone: 01969273287',
+                'Phone: 019xxxxxxx',
                 style: TextStyle(fontSize: 18, color: Colors.blue),
               ),
             ),
@@ -45,7 +45,7 @@ class ContactPage extends StatelessWidget {
   void _launchEmail() async {
     final Uri emailUri = Uri(
       scheme: 'mailto',
-      path: 'imtiazahmed98754@gmail.com',
+      path: 'azaharuddin454@gmail.com',
       query: 'subject=Contact%20Us',
     );
     if (await canLaunchUrl(emailUri)) {
@@ -58,7 +58,7 @@ class ContactPage extends StatelessWidget {
   void _launchPhone() async {
     final Uri phoneUri = Uri(
       scheme: 'tel',
-      path: '01969273287',
+      path: '017xxxxxxxx',
     );
     if (await canLaunchUrl(phoneUri)) {
       await launchUrl(phoneUri);
